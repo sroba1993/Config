@@ -2,7 +2,7 @@ server:
   port: 8011
 
 configuration:
-  text: Configurando ambiente por defecto
+  text: Configurando ambiente de desarrollo
 
 eureka:
   client:

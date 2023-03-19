@@ -2,7 +2,7 @@ server:
   port: 8012
 
 configuration:
-  text: Configurando ambiente por defecto
+  text: Configurando ambiente de produccion
 
 eureka:
   client:

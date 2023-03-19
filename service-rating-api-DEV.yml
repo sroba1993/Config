@@ -1,0 +1,6 @@
+server:
+  port: 8005
+
+configuration:
+  text: Configurando ambiente de desarrollo   
+

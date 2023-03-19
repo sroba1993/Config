@@ -4,3 +4,7 @@ server:
 configuration:
   text: Configurando ambiente de desarrollo   
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

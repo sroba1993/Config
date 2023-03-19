@@ -2,5 +2,10 @@ server:
   port: 8007
 
 configuration:
-  text: Configurando ambiente de producccion   
+  text: Configurando ambiente de producccion  
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka 
 

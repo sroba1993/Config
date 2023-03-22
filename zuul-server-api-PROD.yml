@@ -1,0 +1,37 @@
+server:
+  port: 8093
+
+configuration:
+  text: Configurando ambiente de produccion 
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+zuul:
+  routes:
+    rating:
+      service-id: service-rating-api
+      path: /api-rating/**
+    book:
+      service-id: service-book-api
+      path: /api-book/**
+    users:
+      service-id: service-users
+      path: /api-users/**
+    oauth:
+      service-id: service-oauth
+      path: /api-security/**
+      sensitive-headers: Cookie, Set-Cookie
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 10000

@@ -5,4 +5,4 @@ config:
         id: frontend
         secret: 12345
       jwt:
-        key: algun_codigo_secreto  
+        key: codigo_secreto  
